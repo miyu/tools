@@ -1,6 +1,6 @@
 set -o ignoreeof
 
-export DARGON_PROJECTS_ROOT="$MyRepositories/dargon";
+export DARGON_PROJECTS_ROOT="$MY_REPOSITORIES/dargon";
 export DARGON_BUILD_TOOLS="$DARGON_PROJECTS_ROOT/buildtools";
 alias dargon="scriptcs $DARGON_BUILD_TOOLS/src/main.csx -- --BuildToolsDir=\"$DARGON_BUILD_TOOLS\" --ProjectsRootDir=\"$DARGON_PROJECTS_ROOT\"";
 alias xunit_console="$DARGON_BUILD_TOOLS/dependencies/xunit-1.9.2_64/xunit.console.exe"
