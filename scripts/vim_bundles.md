@@ -1,0 +1,5 @@
+- nerdtree
+- vim-airline
+- vim-airline-themes
+- vim-go
+- vim-nerdtree-tabs
