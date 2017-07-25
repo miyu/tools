@@ -1,5 +1,8 @@
 " set nocp
 
+" Leader is ,
+let mapleader = ','
+
 " Enable 256-color mode. Required on Git Bash for Windows
 " https://github.com/vim-airline/vim-airline/issues/26
 set t_Co=256
@@ -27,6 +30,10 @@ set mouse=a
 " Enable Incremental Search
 set incsearch
 
+" Remap ii to escape
+imap ii <C-[>
+cmap ii <C-[>
+
 " == NERDTree Stuff ==
 " On startup, show NERDTree
 autocmd vimenter * NERDTree
@@ -48,6 +55,12 @@ map } :bn<CR>
 " Bind leader + q to close current buffer (tablike).
 " Tiny hack to make nerdtree update its buffer listing.
 nnoremap <leader>q :bp<cr>:bd #<cr>:NERDTreeToggle %<cr>:NERDTreeToggle %<cr>
+
+" We're cool with backspacing newlines
+set backspace=indent,eol,start
+
+" Set hidden allows switching buffers when unsaved
+set hidden
 
 " == GOLANG Stuff ==
 let g:go_disable_autoinstall = 0

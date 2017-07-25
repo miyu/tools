@@ -42,3 +42,7 @@ alias bash="bash --login"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# Match iterm2 colors
+export TERM=xterm-256color
+export MSYSTEM="LOCAL"
