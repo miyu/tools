@@ -25,8 +25,10 @@ attu4() {
    ssh myu94@attu4.cs.washington.edu
 }
 
+
+
 function color_my_prompt {
-   local __user_and_host="\[\033[01;32m\]\u@\h\e[0m\]"
+   local __user_and_host="\[\033[01;32m\]\u@\h\[\e[0m\]"
    local __msystem="\[\e[35m\]$MSYSTEM\[\e[0m\]"
    local __cur_location="\[\e[33m\]\w\[\e[0m\]"
    local __git_branch_color="\[\033[36m\]"

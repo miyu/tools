@@ -34,6 +34,13 @@ autocmd vimenter * NERDTree
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
+" Hide cursorline as it's buggy on Windows
+let NERDTreeHighlightCursorline=0
+
+" Conemu Msys Connector dislikes arrow char
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
 " Custom Commands
 " Bind Alt + Shift + L to locating current file in nerdtree
 map L :NERDTreeFind<cr>
@@ -58,3 +65,13 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1  
 let g:go_highlight_operators = 1  
 let g:go_highlight_build_constraints = 1  
+
+" == CPP Stuff ==
+au FileType cpp setlocal sw=4 softtabstop=4 expandtab
+
+" backspace can do newlines
+set backspace=indent,eol,start
+
+" del prev LF in normal mode with X
+set whichwrap+=<,>,h,l,[,]
+
